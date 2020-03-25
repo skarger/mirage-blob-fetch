@@ -1,6 +1,6 @@
 import Controller from '@ember/controller';
 import { action } from '@ember/object';
-import fetch from 'fetch';
+// import fetch from 'fetch';
 
 export default class FetchImageController extends Controller {
   @action
@@ -13,7 +13,8 @@ export default class FetchImageController extends Controller {
       error: null
     };
     
-    console.log(window.fetch);
+    console.log(fetch);
+
     return await fetch(imageUrl)
       .then(response => {
         result.mimeType = response.headers.get('content-type');
