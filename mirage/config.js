@@ -23,8 +23,5 @@ export default function() {
 
     https://www.ember-cli-mirage.com/docs/route-handlers/shorthands
   */
-  
-  this.get('/posts');
-  
-  this.passthrough();
+  this.passthrough('https://salsify-ecdn.com/images/22206eec799809830789313b20b92af1.png');
 }
