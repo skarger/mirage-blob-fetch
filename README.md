@@ -33,4 +33,13 @@ overwrite the browser's native `fetch` function](https://github.com/pretenderjs/
 
 The index route provides a demo that reproduces the problem.
 
-<img src="https://github.com/skarger/mirage-blob-fetch/blob/master/public/mirage-blob-fetch.png" title="Index route screenshot" alt="Index route screenshot" width="600"/>
+Clicking the buttons will show the returned blob type and byte sizes when using
+the native `fetch` function and when using the Mirage-overridden `fetch`.
+
+You can see they are different. Clicking these buttons prompts console logging as well.
+
+In order to make this demo, I used an Ember application initializer to capture
+the native `fetch` function as `window.nativeFetch`. Otherwise I would have no way to access
+native `fetch` because Mirage / Pretender override it.
+
+<img src="https://github.com/skarger/mirage-blob-fetch/blob/master/public/mirage-blob-fetch.png" title="Index route screenshot" alt="Index route screenshot" />
