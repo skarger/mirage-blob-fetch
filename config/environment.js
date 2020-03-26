@@ -20,6 +20,7 @@ module.exports = function(environment) {
     APP: {
       // Here you can pass flags/options to your application instance
       // when it is created
+      exampleImageUrl: 'https://upload.wikimedia.org/wikipedia/commons/7/7c/Desertmirage.jpg'
     }
   };
 

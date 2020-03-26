@@ -1,6 +1,7 @@
 import Component from '@glimmer/component';
 import { action } from '@ember/object';
 import { tracked } from '@glimmer/tracking';
+import config from '../config/environment';
 
 export default class FetchImageComponent extends Component {
   @tracked mirageMimeType = '(unset)';
@@ -13,7 +14,7 @@ export default class FetchImageComponent extends Component {
   @tracked nativeBlobType = '(unset)';
   @tracked nativeError = '';
 
-  imageUrl = 'https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Firefox_Logo%2C_2017.png/581px-Firefox_Logo%2C_2017.png';
+  imageUrl = config.APP.exampleImageUrl;
 
   @action
   nativeFetchBlob() {

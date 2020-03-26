@@ -1,3 +1,5 @@
+import config from '../config/environment';
+
 export default function() {
 
   // These comments are here to help you get started. Feel free to delete them.
@@ -23,5 +25,5 @@ export default function() {
 
     https://www.ember-cli-mirage.com/docs/route-handlers/shorthands
   */
-  this.passthrough('https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Firefox_Logo%2C_2017.png/581px-Firefox_Logo%2C_2017.png');
+  this.passthrough(config.APP.exampleImageUrl);
 }
