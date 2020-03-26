@@ -23,5 +23,5 @@ export default function() {
 
     https://www.ember-cli-mirage.com/docs/route-handlers/shorthands
   */
-  this.passthrough('https://salsify-ecdn.com/images/22206eec799809830789313b20b92af1.png');
+  this.passthrough('https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Firefox_Logo%2C_2017.png/581px-Firefox_Logo%2C_2017.png');
 }

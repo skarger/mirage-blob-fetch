@@ -1,0 +1,28 @@
+<div style="margin: 20px">
+    <h2>JS Image Downloads</h2>
+    <button type="button" {{on "click" this.nativeFetchBlob}}>Native Fetch Blob</button>
+    <ul>
+        <li>Native MIME Type: {{this.nativeMimeType}}</li>
+        <li>Native Blob Size: {{this.nativeBlobSize}}</li>
+        <li>Native Blob Type: {{this.nativeBlobType}}</li>
+      {{#if this.nativeError}}
+          <li>Native Error: {{this.nativeError}}</li>
+      {{/if}}
+    </ul>
+
+
+    <button type="button" {{on "click" this.mirageFetchBlob}}>Mirage Passthrough Fetch Blob</button>
+    <ul>
+        <li>Mirage MIME Type: {{this.mirageMimeType}}</li>
+        <li>Mirage Blob Size: {{this.mirageBlobSize}}</li>
+        <li>Mirage Blob Type: {{this.mirageBlobType}}</li>
+        {{#if this.mirageError}}
+          <li>Mirage Error: {{this.mirageError}}</li>
+        {{/if}}
+    </ul>
+</div>
+
+<div>
+    <h2>Image</h2>
+    <img src={{this.imageUrl}}>
+</div>
