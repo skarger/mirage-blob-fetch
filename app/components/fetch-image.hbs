@@ -1,4 +1,4 @@
-<div style="margin: 20px">
+<div style="margin: 20px; display: flex; justify-content: space-between">
     <div>
         <h2>JS Image Downloads</h2>
         <button type="button" {{on "click" this.nativeFetchBlob}}>Native Fetch Blob</button>
@@ -29,6 +29,6 @@
         <p>
             URL: <a href={{this.imageUrl}}>{{this.imageUrl}}</a>
         </p>
-        <img height=400 src={{this.imageUrl}}>
+        <img height=300 src={{this.imageUrl}}>
     </div>
 </div>
