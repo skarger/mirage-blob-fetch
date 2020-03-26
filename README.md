@@ -32,3 +32,5 @@ overwrite the browser's native `fetch` function](https://github.com/pretenderjs/
 * Visit [http://localhost:4200](http://localhost:4200).
 
 The index route provides a demo that reproduces the problem.
+
+<img src="https://github.com/skarger/mirage-blob-fetch/blob/master/public/mirage-blob-fetch.png" title="Index route screenshot" alt="Index route screenshot" width="600"/>
