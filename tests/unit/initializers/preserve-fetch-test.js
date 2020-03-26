@@ -1,6 +1,6 @@
 import Application from '@ember/application';
 
-import { initialize } from 'efetch/initializers/preserve-fetch';
+import { initialize } from 'mirage-blob-fetch/initializers/preserve-fetch';
 import { module, test } from 'qunit';
 import { run } from '@ember/runloop';
 

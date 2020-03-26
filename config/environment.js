@@ -2,7 +2,7 @@
 
 module.exports = function(environment) {
   let ENV = {
-    modulePrefix: 'efetch',
+    modulePrefix: 'mirage-blob-fetch',
     environment,
     rootURL: '/',
     locationType: 'auto',

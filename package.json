@@ -1,8 +1,8 @@
 {
-  "name": "efetch",
+  "name": "mirage-blob-fetch",
   "version": "0.0.0",
   "private": true,
-  "description": "Small description for efetch goes here",
+  "description": "Small description for mirage-blob-fetch goes here",
   "repository": "",
   "license": "MIT",
   "author": "",
